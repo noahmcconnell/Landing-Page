@@ -110,7 +110,7 @@
             <hr class="star-dark mb-5">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                    <form name="sentMessage" id="contactForm">
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Name</label>
@@ -142,7 +142,10 @@
                         <br>
                         <div id="success"></div>
                         <div class="form-group">
-                            <button type="button" class="btn btn-primary btn-xl" id="sendMessageButton" onclick="contactNoah()">Send</button>
+                            <button type="button"  class="btn btn-primary btn-xl" id="sendMessageButton" onclick="contactNoah()">Send</button>
+                            <span id="successMessage" class="text-success" >Message Sent! Noah will contact you shortly!</span>
+                            <span id="errorMessage" class="text-danger">Oops! Error sending email to Noah, please try again!</span>
+                            <span id="validMessage" class="text-danger"></span>
                         </div>
                     </form>
                 </div>
