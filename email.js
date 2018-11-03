@@ -5,13 +5,13 @@ function contactNoah() {
     valid.show();
     return;
   }
-  if ($("#phone").val() === "") {
-    valid.text("Phone Required");
+  if ($("#email").val() === "") {
+    valid.text("Email Required");
     valid.show();
     return;
   }
-  if ($("#email").val() === "") {
-    valid.text("Email Required");
+  if ($("#phone").val() === "") {
+    valid.text("Phone Required");
     valid.show();
     return;
   }
